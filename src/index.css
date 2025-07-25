@@ -1,1 +1,15 @@
-@import "tailwindcss";
+@font-face {
+  font-family: 'RedHatText';
+  src: url('./assets/fonts/RedHatText-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+:root {
+  --font-redhat: 'RedHatText', sans-serif;
+}
+
+@tailwind utilities;
+
+body {
+  font-family: var(--font-redhat);
+}
